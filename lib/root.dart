@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hungry_app/core/constants/app_colors.dart';
 import 'package:hungry_app/features/cart/cart_view.dart';
 import 'package:hungry_app/features/checkout/views/checkout_view.dart';
-import 'package:hungry_app/features/home/views/home_view.dart' show HomeView;
+
+import 'package:hungry_app/features/home/views/homr_page_respo.dart';
 import 'package:hungry_app/features/orderHistory/views/order_his_view.dart';
 
 class Root extends StatefulWidget {
