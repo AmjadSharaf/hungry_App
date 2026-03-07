@@ -28,7 +28,11 @@ class _RootState extends State<Root> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(controller: pageController, children: _screens),
+      body: PageView(
+        physics: NeverScrollableScrollPhysics(),
+        controller: pageController,
+        children: _screens,
+      ),
 
       bottomNavigationBar: Container(
         padding: EdgeInsets.all(10),

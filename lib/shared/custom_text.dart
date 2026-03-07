@@ -21,3 +21,27 @@ class CustomText extends StatelessWidget {
     );
   }
 }
+
+
+// Row(
+                  //   children: [
+                  //     Column(
+                  //       children: [
+                  //         SvgPicture.asset(
+                  //           "assets/logo/logo.svg",
+                  //           color: AppColors.primary,
+                  //           height: 35,
+                  //         ),
+                  //         CustomText(
+                  //           text: "Hello Hungry",
+                  //           fontWeight: FontWeight.w600,
+                  //           size: 20,
+                  //         ),
+                  //       ],
+                  //     ),
+                  //     Spacer(),
+                  //     CircleAvatar(
+                  //       radius: 20,
+                  //       backgroundColor: AppColors.primary,
+                  //       child: Icon(Icons.person, color: Colors.white),
+                  //     ),
