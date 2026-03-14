@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hungry_app/features/productDetail/widgets/soicy_slider.dart';
+import 'package:hungry_app/features/productDetail/widgets/topping_card.dart';
 import 'package:hungry_app/shared/custom_text.dart';
 
 class ProductDetView extends StatefulWidget {
@@ -42,16 +44,20 @@ class _ProductDetViewState extends State<ProductDetView> {
                           "Custom your burger \n to your tastes. \n Ultimate Experince",
                     ),
                     SoicySlider(
-                      onChaged: (v) {
-                        setState(() {
-                          value = v;
-                        });
-                      },
+                      onChaged: (v) => setState(() => value = v),
                       value: value,
                     ),
                   ],
                 ),
               ],
+            ),
+
+            Gap(20),
+            ToppingCard(
+              imageUrl: "assets/detail/sandwitch_detail.png",
+              color: Colors.red,
+              onAdd: () {},
+              title: "sjsc",
             ),
           ],
         ),

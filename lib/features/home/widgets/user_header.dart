@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -36,12 +36,7 @@ class UserHeader extends StatelessWidget {
               color: AppColors.primary,
               height: 28,
             ),
-            // CustomText(
-            //   text: 'Hungry Today?',
-            //   size: 14,
-            //   fontWeight: FontWeight.w500,
-            //   color: Colors.grey.shade500,
-            // ),
+           
           ],
         ),
         Spacer(),

@@ -66,7 +66,7 @@ class SignupView extends StatelessWidget {
                   text: "Sign Up",
                   ontap: () {
                     if (formKey.currentState!.validate()) {
-                      print("object");
+                      
                     }
                   },
                 ),

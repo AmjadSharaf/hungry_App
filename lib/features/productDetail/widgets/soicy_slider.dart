@@ -3,16 +3,11 @@ import 'package:hungry_app/core/constants/app_colors.dart';
 
 import '../../../shared/custom_text.dart';
 
-class SoicySlider extends StatefulWidget {
+class SoicySlider extends StatelessWidget {
   const SoicySlider({super.key, required this.value, required this.onChaged});
   final double value;
   final Function(double) onChaged;
 
-  @override
-  State<SoicySlider> createState() => _SoicySliderState();
-}
-
-class _SoicySliderState extends State<SoicySlider> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -23,8 +18,8 @@ class _SoicySliderState extends State<SoicySlider> {
           max: 3,
           activeColor: AppColors.primary,
           inactiveColor: Colors.grey.shade300,
-          value: widget.value,
-          onChanged: widget.onChaged,
+          value: value,
+          onChanged: onChaged,
         ),
 
         CustomText(text: "3"),

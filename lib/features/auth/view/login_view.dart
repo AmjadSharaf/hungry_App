@@ -53,7 +53,7 @@ class LoginView extends StatelessWidget {
                   text: "Login",
                   ontap: () {
                     if (formKey.currentState!.validate()) {
-                      print("object");
+                      
                     }
                   },
                 ),
