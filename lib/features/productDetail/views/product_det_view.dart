@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:hungry_app/core/constants/app_colors.dart';
+
 import 'package:hungry_app/features/productDetail/widgets/soicy_slider.dart';
 import 'package:hungry_app/features/productDetail/widgets/topping_card.dart';
+import 'package:hungry_app/shared/custom_button.dart';
 import 'package:hungry_app/shared/custom_text.dart';
 
 class ProductDetView extends StatefulWidget {
@@ -105,14 +106,8 @@ class _ProductDetViewState extends State<ProductDetView> {
                       CustomText(text: "\$18.9", size: 20),
                     ],
                   ),
-                  Container(
-                    padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
-                    decoration: BoxDecoration(
-                      color: AppColors.primary,
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                    child: CustomText(text: "Add To Card", color: Colors.white),
-                  ),
+
+                  CustomButton(text: "Add To Card", radius: 18),
                 ],
               ),
             ],

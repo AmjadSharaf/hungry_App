@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hungry_app/core/constants/app_colors.dart';
-import 'package:hungry_app/features/cart/cart_view.dart';
+import 'package:hungry_app/features/cart/views/cart_view.dart';
 import 'package:hungry_app/features/checkout/views/checkout_view.dart';
 import 'package:hungry_app/features/home/views/home_view.dart';
 
