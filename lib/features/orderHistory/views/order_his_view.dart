@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hungry_app/features/orderHistory/widgets/cart_item_order.dart';
 
 class OrderHisView extends StatelessWidget {
   const OrderHisView({super.key});
@@ -7,10 +8,20 @@ class OrderHisView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Order History'),
+        toolbarHeight: 0,
+        scrolledUnderElevation: 0,
+        backgroundColor: Colors.white,
       ),
-      body: const Center(
-        child: Text('Order history content will go here'),
+      body: ListView.builder(
+        itemCount: 10,
+        itemBuilder: (context, index) {
+          return CartItemOrder(
+            image: "assets/test/test.png",
+            count: 3,
+            price: 20,
+            title: "wdwb",
+          );
+        },
       ),
     );
   }

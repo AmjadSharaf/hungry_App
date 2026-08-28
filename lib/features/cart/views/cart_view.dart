@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hungry_app/features/cart/widgets/card_item.dart';
+import 'package:hungry_app/features/checkout/views/checkout_view.dart';
 import 'package:hungry_app/shared/custom_button.dart';
 import 'package:hungry_app/shared/custom_text.dart';
 
@@ -50,13 +51,12 @@ class _CartViewState extends State<CartView> {
               title: "jfjbwfbfw",
               desc: "desc",
               image: "assets/test/test.png",
-              number:  quantetey[index],
-              
+              number: quantetey[index],
+
               add: () => anAdd(index),
               min: () => onmin(index),
             );
           },
-
         ),
       ),
       bottomSheet: Container(
@@ -79,7 +79,16 @@ class _CartViewState extends State<CartView> {
               ],
             ),
 
-            CustomButton(text: "Checkout", radius: 18),
+            CustomButton(
+              text: "Checkout",
+              radius: 18,
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CheckoutView()),
+                );
+              },
+            ),
           ],
         ),
       ),

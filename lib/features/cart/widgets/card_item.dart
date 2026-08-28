@@ -16,9 +16,9 @@ class CardItemCart extends StatelessWidget {
     required this.number,
   });
   final String title, desc, image;
-  final Function? min;
-  final Function? add;
-  final Function? remove;
+  final VoidCallback? min;
+  final VoidCallback? add;
+  final VoidCallback? remove;
   final int number;
 
   @override
@@ -44,17 +44,17 @@ class CardItemCart extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   InkWell(
-                    onTap: () => add,
+                    onTap: add,
                     child: CircleAvatar(
                       backgroundColor: AppColors.primary,
                       child: Icon(Icons.add, color: Colors.white),
                     ),
                   ),
                   Gap(20),
-                  CustomText(text: number.toString()),
+                  CustomText(text: '$number'),
                   Gap(20),
                   InkWell(
-                    onTap: () => min,
+                    onTap:  min,
                     child: CircleAvatar(
                       backgroundColor: AppColors.primary,
                       child: Icon(Icons.remove, color: Colors.white),
@@ -63,7 +63,7 @@ class CardItemCart extends StatelessWidget {
                 ],
               ),
               Gap(10),
-              CustomButton(text: "Remove", height: 40, onTap: () => remove),
+              CustomButton(text: "Remove", height: 40, onTap:  remove),
             ],
           ),
         ],

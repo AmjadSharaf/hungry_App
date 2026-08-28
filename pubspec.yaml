@@ -69,6 +69,8 @@ flutter:
     - assets/logo/
     - assets/test/test.png
     - assets/detail/sandwitch_detail.png
+    - assets/icon/cash.png
+    - assets/icon/sham.png
 
   #   - images/a_dot_ham.jpeg
 
